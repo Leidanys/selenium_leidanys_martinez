@@ -18,7 +18,7 @@ public class TestngSalesforce {
     private static  String SALEFORCE_URL= "https://login.salesforce.com/?locale=eu";
 
     @BeforeMethod
-    private void setup(){
+    public void setup(){
 
         System.setProperty("webdriver.chrome.driver",CHROME_PATH);
         driverChrome=new ChromeDriver();
@@ -28,8 +28,9 @@ public class TestngSalesforce {
     }
 
     @Test(priority = 1,groups = {"successTests"},enabled = true)
-    public void validateSalesforceLogoTest(){
+    public void validateSalesforceLogoTest() throws Exception{
 
+        Thread.sleep(2000);
         String tagname=driverChrome.findElement(By.id("logo")).getTagName();
         WebElement icono =driverChrome.findElement(By.id("logo"));
         System.out.println("LOGO: " + icono.getText());
@@ -89,16 +90,12 @@ public class TestngSalesforce {
     @AfterMethod
     private void closeDriver() throws Exception  {
 
-        try {
-             Thread.sleep(2000);
-            driverChrome.close();
+         Thread.sleep(2000);
+         driverChrome.close();
 
-        } catch (Exception e) {
-            throw new Exception(e.getMessage());
         }
-    }
-
-
-
 
 }
+
+
+
