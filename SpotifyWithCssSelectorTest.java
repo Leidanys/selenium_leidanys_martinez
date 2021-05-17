@@ -153,13 +153,8 @@ public class SpotifyWithCssSelectorTest {
     @AfterMethod
     private void quitDriver() throws Exception {
 
-        try {
-            Thread.sleep(2000);
+          Thread.sleep(2000);
             driverChrome.quit();
-        } catch (Exception e) {
-            throw new Exception(e.getMessage());
         }
-
-    }
 
 }
