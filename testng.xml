@@ -1,0 +1,13 @@
+<suite name="ExamenFinal">
+
+    <parameter name="tagName" value="h2"> </parameter>
+    <test name="ExamenFinal">
+        <classes>
+            <class name="ExamenFinal.InterviewQuestionSiteTest"> </class>
+            <class name="ExamenFinal.PruebaNetflixTest"> </class>
+
+        </classes>
+    </test>
+
+
+</suite>
