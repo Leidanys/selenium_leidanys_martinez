@@ -1,4 +1,4 @@
-package ExamenFinal;
+package ExamenFinal.Test;
 
 import com.github.javafaker.Faker;
 
