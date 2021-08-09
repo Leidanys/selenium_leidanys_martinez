@@ -1,4 +1,4 @@
-package ExamenFinal;
+package ExamenFinal.Test;
 
 import org.testng.annotations.DataProvider;
 
